@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grand Crown Limo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <nav class="nav-links">
+      <a href="#about">About Us</a>
+      <a href="#services">Our Services</a>
+      <a href="#booking">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Grand Crown Limo</h1>
+      <p>Ride in Style, Comfort, and Class — Discover Luxury with Grand Crown Limo</p>
+      <a href="#booking" class="btn">Book Your Ride</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li> Airport Transfers</li>
+      <li> Event Transportation</li>
+      <li> Corporate Travel</li>
+    </ul>
+  </section>
+
+  <!-- Booking / Contact Form -->
+<section class="form-section" id="booking">
+  <h2>Book a Ride</h2>
+
+  <!-- Tabs -->
+  <div class="tab-container">
+    <button class="tab active" id="rideTab">Book a Ride</button>
+    <button class="tab" id="hourTab">By the Hour</button>
+  </div>
+
+  <!-- One Way Form -->
+  <form id="rideForm" class="booking-form active">
+    <input type="text" placeholder="Full Name" required />
+    <input type="tel" placeholder="Phone Number" required />
+    <input type="text" placeholder="Pickup Location" required />
+    <input type="text" placeholder="Drop-off Location" required />
+
+    <input 
+      id="pickupTime1" 
+      type="text" 
+      placeholder="Enter pickup date & time" 
+      required
+      onfocus="this.type='datetime-local'; this.showPicker();"
+    />
+
+    <select required>
+      <option value="" disabled selected>Select Car Type</option>
+      <option value="sedan">Sedan</option>
+      <option value="suv">SUV</option>
+      <option value="full-size-suv">Full Size SUV</option>
+    </select>
+
+    
+
+    <button type="submit">Submit Request</button>
+  </form>
+
+  <!-- By the Hour Form -->
+<form id="hourForm" class="booking-form" data-type="hour">
+  <input name="name" type="text" placeholder="Full Name" required />
+  <input name="phone" type="tel" placeholder="Phone Number" required />
+  <input name="pickup" type="text" placeholder="Pickup Location" required />
+
+  <input 
+    id="pickupTime2" 
+    name="pickupTime" 
+    type="text" 
+    placeholder="Enter pickup date & time" 
+    required
+    onfocus="this.type='datetime-local'; this.showPicker();"
+  />
+
+  <select id="hoursSelect" name="hours" required>
+    <option value="" disabled selected>Select Hours</option>
+    <option value="2">2 hours</option>
+    <option value="3">3 hours</option>
+    <option value="4">4 hours</option>
+    <option value="5">5 hours</option>
+    <option value="6">6 hours</option>
+  </select>
+
+  <select id="carTypeHour" name="carType" required>
+    <option value="" disabled selected>Select Car Type</option>
+    <option value="sedan">Sedan</option>
+    <option value="suv">SUV</option>
+    <option value="full-size-suv">Full Size SUV</option>
+  </select>
+
+  <button type="submit">Submit Request</button>
+</form>
+
+  <p id="successMessage" style="display:none; color: green; margin-top: 15px;">
+    Your request has been submitted, we will reach out to you very soon.
+  </p>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Grand Crown Limo. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

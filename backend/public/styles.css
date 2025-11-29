@@ -1,0 +1,176 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d4af37;
+}
+
+
+/* Hero Section */
+.hero {
+  background: url('pics/Cover_image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top; /* optional: position image better */
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;  /* align to top */
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;  /* control vertical spacing */
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 8px;
+  width: 700px; /* increase as needed */
+  max-width: 90vw; /* keeps it responsive */
+  margin: 0 auto; 
+
+
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #d4af37;
+  color: black;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Services Section */
+.services {
+  padding: 40px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.services ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.services li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+/* Booking Form */
+.form-section {
+  padding: 40px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #d4af37;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px;
+  cursor: pointer;
+  background: #ddd;
+  border: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.tab.active {
+  background: #d4af37;
+  color: black;
+}
+
+.booking-form {
+  display: none;
+}
+
+.booking-form.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form input,
+.booking-form select {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
