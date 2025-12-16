@@ -1,38 +1,3 @@
-const rideTab = document.getElementById("rideTab");
-const hourTab = document.getElementById("hourTab");
-const rideForm = document.getElementById("rideForm");
-const hourForm = document.getElementById("hourForm");
-const successMsg = document.getElementById("successMessage");
-
-// Rates per hour for hour bookings
-const RATES = {
-  "sedan": 40,
-  "suv": 60,
-  "full-size-suv": 80
-};
-const BASE_FEE = 10; // optional base booking fee
-
-// Tab switching
-rideTab.addEventListener("click", () => {
-  rideTab.classList.add("active");
-  hourTab.classList.remove("active");
-  rideForm.classList.add("active");
-  hourForm.classList.remove("active");
-});
-
-hourTab.addEventListener("click", () => {
-  hourTab.classList.add("active");
-  rideTab.classList.remove("active");
-  hourForm.classList.add("active");
-  rideForm.classList.remove("active");
-});
-
-// Helper to calculate estimate
-function calcHourEstimate(hours, carType) {
-  const rate = RATES[carType] || 0;
-  const total = rate * Number(hours) + BASE_FEE;
-  return total;
-}
 
 //form submission
 document.querySelectorAll("form").forEach(form => {

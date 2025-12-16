@@ -11,9 +11,9 @@
   <!-- Navigation -->
   <header class="navbar">
     <nav class="nav-links">
-      <a href="#about">About Us</a>
-      <a href="#services">Our Services</a>
-      <a href="#booking">Contact Us</a>
+      <a href="about_us.html">About Us</a>
+      <a href="index.html#services">Our Services</a>
+      <a href="contact_us.html">Contact Us</a>
     </nav>
   </header>
 
@@ -22,94 +22,97 @@
     <div class="hero-content">
       <h1>Welcome to Grand Crown Limo</h1>
       <p>Ride in Style, Comfort, and Class — Discover Luxury with Grand Crown Limo</p>
-      <a href="#booking" class="btn">Book Your Ride</a>
+      <a href="https://customer.moovs.app/grand-crown-limo/iframe
+" class="btn">Book Your Ride</a>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="services" id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li> Airport Transfers</li>
-      <li> Event Transportation</li>
-      <li> Corporate Travel</li>
-    </ul>
-  </section>
+  <section class="our-services" id="services">
+  <h2 class="section-title">Our Services</h2>
 
-  <!-- Booking / Contact Form -->
-<section class="form-section" id="booking">
-  <h2>Book a Ride</h2>
-
-  <!-- Tabs -->
-  <div class="tab-container">
-    <button class="tab active" id="rideTab">Book a Ride</button>
-    <button class="tab" id="hourTab">By the Hour</button>
+  <!-- Service 1 -->
+  <div class="service-card">
+    <div class="service-image">
+      <!-- Image Placeholder -->
+      <img src="pics/airport.jpg" alt="Airport Transfers">
+    </div>
+    <div class="service-content">
+      <h3>Airport Transfers</h3>
+      <p>
+        Traveling to or from the airport should be smooth, stress-free, and comfortable.
+        Whether you need a pickup from JFK, Philadelphia International Airport, or a timely
+        drop-off at Newark, our airport transfer service ensures a seamless experience from
+        start to finish.
+      </p>
+    </div>
   </div>
 
-  <!-- One Way Form -->
-  <form id="rideForm" class="booking-form active">
-    <input type="text" placeholder="Full Name" required />
-    <input type="tel" placeholder="Phone Number" required />
-    <input type="text" placeholder="Pickup Location" required />
-    <input type="text" placeholder="Drop-off Location" required />
+  <!-- Service 2 -->
+  <div class="service-card reverse">
+    <div class="service-image">
+      <!-- Image Placeholder -->
+      <img src="pics/Event.jpg" alt="Event Transportation">
+    </div>
+    <div class="service-content">
+      <h3>Event Transportation</h3>
+      <p>
+        Every special occasion deserves exceptional transportation. From weddings and prom
+        nights to anniversaries, birthday celebrations, and red-carpet events, our luxury
+        limousine service adds elegance and reliability to your experience.
+      </p>
+    </div>
+  </div>
 
-    <input 
-      id="pickupTime1" 
-      type="text" 
-      placeholder="Enter pickup date & time" 
-      required
-      onfocus="this.type='datetime-local'; this.showPicker();"
-    />
+  <!-- Service 3 -->
+  <div class="service-card">
+    <div class="service-image">
+      <!-- Image Placeholder -->
+      <img src="pics/corporate.jpg" alt="Corporate Travel">
+    </div>
+    <div class="service-content">
+      <h3>Corporate Travel</h3>
+      <p>
+        Make a strong professional impression with our reliable corporate transportation
+        services. Whether you're attending meetings, conferences, conventions, or hosting
+        important clients, we provide punctual and discreet chauffeur-driven service tailored
+        to business needs.
+      </p>
+    </div>
+  </div>
 
-    <select required>
-      <option value="" disabled selected>Select Car Type</option>
-      <option value="sedan">Sedan</option>
-      <option value="suv">SUV</option>
-      <option value="full-size-suv">Full Size SUV</option>
-    </select>
+  <!-- Service 4 -->
+  <div class="service-card reverse">
+    <div class="service-image">
+      <!-- Image Placeholder -->
+      <img src="pics/hourly.jpg" alt="Hourly Chauffeur Service">
+    </div>
+    <div class="service-content">
+      <h3>Hourly Chauffeur Service</h3>
+      <p>
+        Our hourly chauffeur service offers flexibility and convenience for clients who
+        require transportation on their own schedule. Ideal for business meetings, city
+        tours, shopping trips, or multiple stops throughout the day, this service provides
+        a dedicated professional driver and luxury vehicle at your disposal.
+      </p>
+    </div>
+  </div>
 
-    
-
-    <button type="submit">Submit Request</button>
-  </form>
-
-  <!-- By the Hour Form -->
-<form id="hourForm" class="booking-form" data-type="hour">
-  <input name="name" type="text" placeholder="Full Name" required />
-  <input name="phone" type="tel" placeholder="Phone Number" required />
-  <input name="pickup" type="text" placeholder="Pickup Location" required />
-
-  <input 
-    id="pickupTime2" 
-    name="pickupTime" 
-    type="text" 
-    placeholder="Enter pickup date & time" 
-    required
-    onfocus="this.type='datetime-local'; this.showPicker();"
-  />
-
-  <select id="hoursSelect" name="hours" required>
-    <option value="" disabled selected>Select Hours</option>
-    <option value="2">2 hours</option>
-    <option value="3">3 hours</option>
-    <option value="4">4 hours</option>
-    <option value="5">5 hours</option>
-    <option value="6">6 hours</option>
-  </select>
-
-  <select id="carTypeHour" name="carType" required>
-    <option value="" disabled selected>Select Car Type</option>
-    <option value="sedan">Sedan</option>
-    <option value="suv">SUV</option>
-    <option value="full-size-suv">Full Size SUV</option>
-  </select>
-
-  <button type="submit">Submit Request</button>
-</form>
-
-  <p id="successMessage" style="display:none; color: green; margin-top: 15px;">
-    Your request has been submitted, we will reach out to you very soon.
-  </p>
+  <!-- Service 5 -->
+  <div class="service-card">
+    <div class="service-image">
+      <!-- Image Placeholder -->
+      <img src="pics/Group_tour.jpg" alt="Night Out & Private Tours">
+    </div>
+    <div class="service-content">
+      <h3>Night Out & Private Tours</h3>
+      <p>
+        Elevate your night out with luxury transportation designed for comfort and safety.
+        Whether you're heading to a concert, sporting event, fine dining, or a private city
+        tour, our chauffeur service ensures you enjoy every moment without worrying about
+        driving or parking. Sit back, relax, and enjoy the ride while we handle the rest.
+      </p>
+    </div>
+  </div>
 </section>
 
 
@@ -117,8 +120,6 @@
   <footer>
     <p>&copy; 2025 Grand Crown Limo. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 
 </body>
 </html>
